@@ -1,3 +1,5 @@
+# 此项目有AI生成
+
 # Spring Boot Actuator Gateway Application
 
 这是一个基于 Spring Boot 的应用程序，集成了 Spring Cloud Gateway 和 Actuator 功能，提供了完整的请求日志记录功能。
@@ -103,10 +105,13 @@ tail -f logs/request.log
 3. 验证 Maven 和 JDK 版本是否符合要求
 4. 检查 `logs` 目录权限
 
-## 贡献指南
+## release v1.0.0为无鉴权
 
-欢迎提交 Issue 和 Pull Request 来改进项目。
+## release v1.1.0为有鉴权
+添加了 Spring Security 依赖
+创建了 SecurityConfig 配置类，实现了：基本认证（HTTP Basic Authentication），角色基础的访问控制，密码加密
+![image](https://github.com/user-attachments/assets/79637df7-d1db-49b3-a893-37228f078e12)
 
-## 许可证
+![image](https://github.com/user-attachments/assets/48f4fe57-d26b-4064-9bbe-36cf639ec1a4)
 
-[MIT License](LICENSE)
+如果你需要修改用户名和密码，可以在 application.properties 中更改 spring.security.user.name 和 spring.security.user.password 的值。
