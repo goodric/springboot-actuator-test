@@ -1,4 +1,4 @@
-# 此项目有AI生成
+# 此项目由AI生成
 
 # Spring Boot Actuator Gateway Application
 
